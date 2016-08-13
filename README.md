@@ -159,13 +159,19 @@ In general, it may be helpful to think of the last two attributes in the form of
 Tiếp theo, sử dụng  `EntrustUserTrait` trait trong  model `User` hiện có của bạn. để kết nối người dùng và gán vai trò ví dụ:
 
 ```
-	use Eloquent as Model;
-	use Hoanghiep\Role\Traits\EntrustUserTrait;
-	class User extends Model
-	{
-		 use EntrustUserTrait;
-      }
+	<?php
 	
+	namespace App;
+	
+	use Illuminate\Foundation\Auth\User as Authenticatable;
+	use Hoanghiep\Role\Traits\EntrustUserTrait;
+	
+	class User extends Authenticatable
+	{
+	
+	     use EntrustUserTrait;
+	
+
 ```
 
 Điều này sẽ cho phép các mối quan hệ với `Role` và thêm các phương thức sau đây  `function roles()`,  `function hasRole($name)`, `function can($permission)`, và  `function ability($roles, $permissions, $options)` trong  `User` model của bạn.
