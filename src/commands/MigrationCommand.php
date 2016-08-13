@@ -1,4 +1,4 @@
-<?php namespace hoanghiep\role;
+<?php namespace Hoanghiep\Role;
 
 /**
  * This file is part of Entrust,
