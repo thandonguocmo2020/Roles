@@ -75,13 +75,15 @@ Những giá trị này sẽ được sử dụng bởi ủy thác để tham kh
 
 config/auth.php thay đổi providers key thành
 
-'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
-            'table' => 'users',
-        ],
-],
+	**
+	'providers' => [
+	        'users' => [
+	            'driver' => 'eloquent',
+	            'model' => App\User::class,
+	            'table' => 'users',
+	        ],
+	],
+	**
 
 
 Bạn cũng có thể xuất bản các cấu hình cho các gói này để tùy chỉnh thêm các tên bảng và không gian tên mô hình.
