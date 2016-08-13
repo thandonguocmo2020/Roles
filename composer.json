@@ -1,5 +1,5 @@
 {
-    "name": "hoanghiep/role",
+    "name": "hoanghiep/roles",
     "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
     "keywords": ["laravel","illuminate","auth","roles","acl","permission"],
     "license": "MIT",
@@ -38,7 +38,7 @@
             "src/commands"
         ],
         "psr-4": {
-            "hoanghiep\\role\\": "src/Entrust/"
+            "Hoanghiep\\Role\\": "src/Entrust/"
         }
     },
     "autoload-dev": {
